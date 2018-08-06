@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiDrawMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiDraw">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="win_uid" jdbcType="INTEGER" property="winUid" />
+    <result column="win_nick" jdbcType="VARCHAR" property="winNick" />
+    <result column="win_mobile" jdbcType="VARCHAR" property="winMobile" />
+    <result column="stop_draw" jdbcType="BIT" property="stopDraw" />
+    <result column="push_draw" jdbcType="BIT" property="pushDraw" />
+    <result column="down" jdbcType="TINYINT" property="down" />
+    <result column="userid_1" jdbcType="INTEGER" property="userid1" />
+    <result column="nick_1" jdbcType="VARCHAR" property="nick1" />
+    <result column="count_1" jdbcType="INTEGER" property="count1" />
+    <result column="carno_1" jdbcType="VARCHAR" property="carno1" />
+    <result column="cartype_1" jdbcType="VARCHAR" property="cartype1" />
+    <result column="userid_2" jdbcType="INTEGER" property="userid2" />
+    <result column="nick_2" jdbcType="VARCHAR" property="nick2" />
+    <result column="count_2" jdbcType="INTEGER" property="count2" />
+    <result column="carno_2" jdbcType="VARCHAR" property="carno2" />
+    <result column="cartype_2" jdbcType="VARCHAR" property="cartype2" />
+    <result column="winner" jdbcType="TINYINT" property="winner" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="mtime" jdbcType="INTEGER" property="mtime" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="info" jdbcType="LONGVARCHAR" property="info" />
+  </resultMap>
+</mapper>

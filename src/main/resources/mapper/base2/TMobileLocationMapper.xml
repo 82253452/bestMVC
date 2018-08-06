@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.TMobileLocationMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TMobileLocation">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="isp" jdbcType="VARCHAR" property="isp" />
+    <result column="city_code" jdbcType="VARCHAR" property="cityCode" />
+    <result column="post_code" jdbcType="VARCHAR" property="postCode" />
+  </resultMap>
+</mapper>

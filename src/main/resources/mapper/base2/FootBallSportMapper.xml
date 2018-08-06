@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.FootBallSportMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.FootBallSport">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="start_date" jdbcType="DATE" property="startDate" />
+    <result column="home_name" jdbcType="VARCHAR" property="homeName" />
+    <result column="home_logo" jdbcType="VARCHAR" property="homeLogo" />
+    <result column="guest_name" jdbcType="VARCHAR" property="guestName" />
+    <result column="guest_logo" jdbcType="VARCHAR" property="guestLogo" />
+    <result column="start_time" jdbcType="TIMESTAMP" property="startTime" />
+    <result column="guest_goal" jdbcType="INTEGER" property="guestGoal" />
+    <result column="home_id" jdbcType="INTEGER" property="homeId" />
+    <result column="guest_id" jdbcType="INTEGER" property="guestId" />
+    <result column="ctime" jdbcType="DATE" property="ctime" />
+    <result column="utime" jdbcType="DATE" property="utime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="home_goal" jdbcType="INTEGER" property="homeGoal" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="third_id" jdbcType="VARCHAR" property="thirdId" />
+    <result column="win_status" jdbcType="INTEGER" property="winStatus" />
+  </resultMap>
+</mapper>

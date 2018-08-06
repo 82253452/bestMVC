@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.DataBoxMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.DataBox">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="speed" jdbcType="DOUBLE" property="speed" />
+    <result column="height" jdbcType="DOUBLE" property="height" />
+    <result column="acceleration" jdbcType="DOUBLE" property="acceleration" />
+    <result column="distance" jdbcType="DOUBLE" property="distance" />
+    <result column="time" jdbcType="DOUBLE" property="time" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="acceLeration_avg" jdbcType="DOUBLE" property="accelerationAvg" />
+    <result column="speed_tail" jdbcType="DOUBLE" property="speedTail" />
+    <result column="device" jdbcType="VARCHAR" property="device" />
+    <result column="device_code" jdbcType="VARCHAR" property="deviceCode" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+</mapper>

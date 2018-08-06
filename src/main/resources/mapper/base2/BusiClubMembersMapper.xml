@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiClubMembersMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiClubMembers">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="cid" jdbcType="INTEGER" property="cid" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="role" jdbcType="TINYINT" property="role" />
+    <result column="ctime" jdbcType="TIMESTAMP" property="ctime" />
+  </resultMap>
+</mapper>

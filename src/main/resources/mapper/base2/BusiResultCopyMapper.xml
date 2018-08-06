@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiResultCopyMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiResultCopy">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sportid" jdbcType="INTEGER" property="sportid" />
+    <result column="sportlongname" jdbcType="VARCHAR" property="sportlongname" />
+    <result column="sportshortname" jdbcType="VARCHAR" property="sportshortname" />
+    <result column="phaseid" jdbcType="INTEGER" property="phaseid" />
+    <result column="fatherphaseid" jdbcType="INTEGER" property="fatherphaseid" />
+    <result column="phasecode" jdbcType="VARCHAR" property="phasecode" />
+    <result column="phaseorder" jdbcType="INTEGER" property="phaseorder" />
+    <result column="phasetype" jdbcType="INTEGER" property="phasetype" />
+    <result column="phaselongname" jdbcType="VARCHAR" property="phaselongname" />
+    <result column="phaseshortname" jdbcType="VARCHAR" property="phaseshortname" />
+    <result column="matchid" jdbcType="INTEGER" property="matchid" />
+    <result column="matchcode" jdbcType="INTEGER" property="matchcode" />
+    <result column="matchorder" jdbcType="INTEGER" property="matchorder" />
+    <result column="matchno" jdbcType="INTEGER" property="matchno" />
+    <result column="matchlongname" jdbcType="VARCHAR" property="matchlongname" />
+    <result column="matchshortname" jdbcType="VARCHAR" property="matchshortname" />
+    <result column="matchstatus" jdbcType="INTEGER" property="matchstatus" />
+    <result column="startorder" jdbcType="INTEGER" property="startorder" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="carno" jdbcType="INTEGER" property="carno" />
+    <result column="brand" jdbcType="VARCHAR" property="brand" />
+    <result column="model" jdbcType="VARCHAR" property="model" />
+    <result column="hp" jdbcType="VARCHAR" property="hp" />
+    <result column="rank" jdbcType="INTEGER" property="rank" />
+    <result column="displayposition" jdbcType="INTEGER" property="displayposition" />
+    <result column="IRM" jdbcType="VARCHAR" property="irm" />
+    <result column="reaction_time" jdbcType="VARCHAR" property="reactionTime" />
+    <result column="reaction_time_1" jdbcType="VARCHAR" property="reactionTime1" />
+    <result column="reaction_time_2" jdbcType="VARCHAR" property="reactionTime2" />
+    <result column="reaction_time_3" jdbcType="VARCHAR" property="reactionTime3" />
+    <result column="FT330" jdbcType="VARCHAR" property="ft330" />
+    <result column="FT330_1" jdbcType="VARCHAR" property="ft3301" />
+    <result column="FT330_2" jdbcType="VARCHAR" property="ft3302" />
+    <result column="FT330_3" jdbcType="VARCHAR" property="ft3303" />
+    <result column="FT60" jdbcType="VARCHAR" property="ft60" />
+    <result column="FT60_1" jdbcType="VARCHAR" property="ft601" />
+    <result column="FT60_2" jdbcType="VARCHAR" property="ft602" />
+    <result column="FT60_3" jdbcType="VARCHAR" property="ft603" />
+    <result column="FT660" jdbcType="VARCHAR" property="ft660" />
+    <result column="FT660_1" jdbcType="VARCHAR" property="ft6601" />
+    <result column="FT660_2" jdbcType="VARCHAR" property="ft6602" />
+    <result column="FT660_3" jdbcType="VARCHAR" property="ft6603" />
+    <result column="speed660" jdbcType="VARCHAR" property="speed660" />
+    <result column="speed660_1" jdbcType="VARCHAR" property="speed6601" />
+    <result column="speed660_2" jdbcType="VARCHAR" property="speed6602" />
+    <result column="speed660_3" jdbcType="VARCHAR" property="speed6603" />
+    <result column="vehicle_speed" jdbcType="VARCHAR" property="vehicleSpeed" />
+    <result column="vehicle_speed_1" jdbcType="VARCHAR" property="vehicleSpeed1" />
+    <result column="vehicle_speed_2" jdbcType="VARCHAR" property="vehicleSpeed2" />
+    <result column="vehicle_speed_3" jdbcType="VARCHAR" property="vehicleSpeed3" />
+    <result column="elapsed_time" jdbcType="VARCHAR" property="elapsedTime" />
+    <result column="elapsed_time_1" jdbcType="VARCHAR" property="elapsedTime1" />
+    <result column="elapsed_time_2" jdbcType="VARCHAR" property="elapsedTime2" />
+    <result column="elapsed_time_3" jdbcType="VARCHAR" property="elapsedTime3" />
+  </resultMap>
+</mapper>

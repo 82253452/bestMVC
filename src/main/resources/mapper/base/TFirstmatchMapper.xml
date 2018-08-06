@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TFirstmatchMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TFirstmatch">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="车号" jdbcType="DOUBLE" property="车号" />
+    <result column="车手姓名" jdbcType="NVARCHAR" property="车手姓名" />
+    <result column="驱动形式" jdbcType="NVARCHAR" property="驱动形式" />
+    <result column="预赛成绩ET1" jdbcType="NVARCHAR" property="预赛成绩et1" />
+    <result column="Speed" jdbcType="NVARCHAR" property="speed" />
+    <result column="预赛成绩ET2" jdbcType="NVARCHAR" property="预赛成绩et2" />
+    <result column="Speed1" jdbcType="NVARCHAR" property="speed1" />
+    <result column="预赛成绩ET3" jdbcType="NVARCHAR" property="预赛成绩et3" />
+    <result column="Speed2" jdbcType="NVARCHAR" property="speed2" />
+    <result column="决赛ET" jdbcType="NVARCHAR" property="决赛et" />
+    <result column="Speed3" jdbcType="NVARCHAR" property="speed3" />
+    <result column="F12" jdbcType="NVARCHAR" property="f12" />
+    <result column="F13" jdbcType="NVARCHAR" property="f13" />
+    <result column="F14" jdbcType="NVARCHAR" property="f14" />
+    <result column="F15" jdbcType="NVARCHAR" property="f15" />
+    <result column="0" jdbcType="DOUBLE" property="0" />
+    <result column="总和" jdbcType="DOUBLE" property="总和" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TsPhaseMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TsPhase">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="phaseid" jdbcType="INTEGER" property="phaseid" />
+    <result column="fatherphaseid" jdbcType="INTEGER" property="fatherphaseid" />
+    <result column="sportid" jdbcType="INTEGER" property="sportid" />
+    <result column="phaseorder" jdbcType="INTEGER" property="phaseorder" />
+    <result column="phasetype" jdbcType="INTEGER" property="phasetype" />
+    <result column="phasecode" jdbcType="NVARCHAR" property="phasecode" />
+    <result column="phaselongname" jdbcType="NVARCHAR" property="phaselongname" />
+    <result column="phaseshortname" jdbcType="NVARCHAR" property="phaseshortname" />
+  </resultMap>
+</mapper>

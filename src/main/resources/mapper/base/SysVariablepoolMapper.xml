@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.SysVariablepoolMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.SysVariablepool">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="variable_name" jdbcType="NVARCHAR" property="variableName" />
+  </resultMap>
+</mapper>

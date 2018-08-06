@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiGoodsMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiGoods">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="cost" jdbcType="DECIMAL" property="cost" />
+    <result column="ponits" jdbcType="INTEGER" property="ponits" />
+    <result column="sponsor" jdbcType="VARCHAR" property="sponsor" />
+    <result column="stock" jdbcType="INTEGER" property="stock" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="ctime" jdbcType="TIMESTAMP" property="ctime" />
+    <result column="mtime" jdbcType="TIMESTAMP" property="mtime" />
+    <result column="creator" jdbcType="INTEGER" property="creator" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="gold" jdbcType="INTEGER" property="gold" />
+    <result column="largess" jdbcType="INTEGER" property="largess" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+</mapper>

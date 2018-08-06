@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.LiveShowPageMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.LiveShowPage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="image" jdbcType="VARCHAR" property="image" />
+    <result column="show" jdbcType="INTEGER" property="show" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="busi_type" jdbcType="INTEGER" property="busiType" />
+    <result column="distributions" jdbcType="INTEGER" property="distributions" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="probability" jdbcType="INTEGER" property="probability" />
+    <result column="appid" jdbcType="VARCHAR" property="appid" />
+    <result column="app_name" jdbcType="VARCHAR" property="appName" />
+  </resultMap>
+</mapper>

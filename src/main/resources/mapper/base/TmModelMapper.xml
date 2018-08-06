@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TmModelMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TmModel">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="F_ModelID" jdbcType="INTEGER" property="fModelid" />
+    <result column="F_ModelName" jdbcType="NVARCHAR" property="fModelname" />
+    <result column="F_ModelComment" jdbcType="NVARCHAR" property="fModelcomment" />
+    <result column="F_Order" jdbcType="INTEGER" property="fOrder" />
+  </resultMap>
+</mapper>

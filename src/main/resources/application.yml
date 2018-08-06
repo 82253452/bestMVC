@@ -1,0 +1,36 @@
+spring:
+  datasource:
+    primary:
+      serverName: 127.0.0.1
+      databaseName: N_Racing
+      username: admin
+      password: admin
+    secondary:
+      url: jdbc:mysql://47.92.100.148:3306/fast4ward_dev?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8
+      username: root
+      password: Fblife@20171019
+      driver-class-name: com.mysql.jdbc.Driver
+    pool:
+      minPoolSize: 50
+      maxPoolSize: 500
+      maxIdleTime: 60
+      testQuery: select 1
+      maxLifetime: 20000
+      maintenanceInterval: 60
+      borrowConnectionTimeout: 60
+  redis:
+    database: 0
+    host: 47.92.76.66
+    port: 6379
+    password: fast4ward!@#$
+    pool:
+      max-active: 8
+      max-idle: 8
+      min-idle: 0
+      max-wait: 10000
+mybatis:
+    type-aliases-package: com.example.entity
+pagehelper:
+  autoRuntimeDialect: true
+  reasonable: true
+  supportMethodsArguments: true

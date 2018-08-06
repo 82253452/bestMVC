@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TPositionruledesMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TPositionruledes">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="RuleID" jdbcType="INTEGER" property="ruleid" />
+    <result column="Order" jdbcType="INTEGER" property="order" />
+    <result column="Round" jdbcType="NVARCHAR" property="round" />
+    <result column="RoundDes" jdbcType="NVARCHAR" property="rounddes" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiEnrollCopy2Mapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiEnrollCopy2">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sportid" jdbcType="INTEGER" property="sportid" />
+    <result column="rid" jdbcType="INTEGER" property="rid" />
+    <result column="realname" jdbcType="VARCHAR" property="realname" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="gender" jdbcType="VARCHAR" property="gender" />
+    <result column="idcard" jdbcType="VARCHAR" property="idcard" />
+    <result column="passport" jdbcType="VARCHAR" property="passport" />
+    <result column="wechat" jdbcType="VARCHAR" property="wechat" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="team" jdbcType="VARCHAR" property="team" />
+    <result column="carno" jdbcType="VARCHAR" property="carno" />
+    <result column="site" jdbcType="VARCHAR" property="site" />
+    <result column="carlogo" jdbcType="VARCHAR" property="carlogo" />
+    <result column="carmodel" jdbcType="VARCHAR" property="carmodel" />
+    <result column="vin" jdbcType="VARCHAR" property="vin" />
+    <result column="intakemodel" jdbcType="VARCHAR" property="intakemodel" />
+    <result column="drivemodel" jdbcType="VARCHAR" property="drivemodel" />
+    <result column="hp" jdbcType="VARCHAR" property="hp" />
+    <result column="groups" jdbcType="VARCHAR" property="groups" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="mtime" jdbcType="INTEGER" property="mtime" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="refitlist" jdbcType="LONGVARCHAR" property="refitlist" />
+  </resultMap>
+</mapper>

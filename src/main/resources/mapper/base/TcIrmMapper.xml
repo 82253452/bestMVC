@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TcIrmMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TcIrm">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="irmID" jdbcType="INTEGER" property="irmid" />
+    <result column="irmCode" jdbcType="NVARCHAR" property="irmcode" />
+    <result column="irmName" jdbcType="NVARCHAR" property="irmname" />
+  </resultMap>
+</mapper>

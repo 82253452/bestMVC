@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiCourtMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiCourt">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="addr" jdbcType="VARCHAR" property="addr" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="keys" jdbcType="VARCHAR" property="keys" />
+    <result column="creater" jdbcType="VARCHAR" property="creater" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="editor" jdbcType="VARCHAR" property="editor" />
+    <result column="mtime" jdbcType="INTEGER" property="mtime" />
+    <result column="status" jdbcType="BIT" property="status" />
+  </resultMap>
+</mapper>

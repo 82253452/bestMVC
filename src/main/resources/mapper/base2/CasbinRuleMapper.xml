@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.CasbinRuleMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.CasbinRule">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="p_type" jdbcType="VARCHAR" property="pType" />
+    <result column="v0" jdbcType="VARCHAR" property="v0" />
+    <result column="v1" jdbcType="VARCHAR" property="v1" />
+    <result column="v2" jdbcType="VARCHAR" property="v2" />
+    <result column="v3" jdbcType="VARCHAR" property="v3" />
+    <result column="v4" jdbcType="VARCHAR" property="v4" />
+    <result column="v5" jdbcType="VARCHAR" property="v5" />
+  </resultMap>
+</mapper>

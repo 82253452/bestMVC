@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.WxMessageMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.WxMessage">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="template_id" jdbcType="VARCHAR" property="templateId" />
+    <result column="color" jdbcType="VARCHAR" property="color" />
+    <result column="data" jdbcType="VARCHAR" property="data" />
+    <result column="page" jdbcType="VARCHAR" property="page" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+  </resultMap>
+</mapper>

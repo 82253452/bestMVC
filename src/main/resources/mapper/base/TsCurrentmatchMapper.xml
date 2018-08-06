@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TsCurrentmatchMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TsCurrentmatch">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="F_AutoID" jdbcType="INTEGER" property="fAutoid" />
+    <result column="F_MatchNo" jdbcType="INTEGER" property="fMatchno" />
+    <result column="F_Order" jdbcType="INTEGER" property="fOrder" />
+    <result column="F_PlayerID" jdbcType="NVARCHAR" property="fPlayerid" />
+    <result column="F_PlayerName" jdbcType="NVARCHAR" property="fPlayername" />
+    <result column="F_CarNo" jdbcType="NVARCHAR" property="fCarno" />
+    <result column="F_Team" jdbcType="NVARCHAR" property="fTeam" />
+    <result column="F_Brand" jdbcType="NVARCHAR" property="fBrand" />
+    <result column="F_Model" jdbcType="NVARCHAR" property="fModel" />
+    <result column="F_RemodelInfo" jdbcType="NVARCHAR" property="fRemodelinfo" />
+    <result column="F_Hp" jdbcType="NVARCHAR" property="fHp" />
+    <result column="F_ReactionTime" jdbcType="NVARCHAR" property="fReactiontime" />
+    <result column="F_FT60" jdbcType="NVARCHAR" property="fFt60" />
+    <result column="F_FT330" jdbcType="NVARCHAR" property="fFt330" />
+    <result column="F_FT660" jdbcType="NVARCHAR" property="fFt660" />
+    <result column="F_Speed660" jdbcType="NVARCHAR" property="fSpeed660" />
+    <result column="F_VehicleSpeed" jdbcType="NVARCHAR" property="fVehiclespeed" />
+    <result column="F_ElapsedTime" jdbcType="NVARCHAR" property="fElapsedtime" />
+    <result column="F_Result" jdbcType="NVARCHAR" property="fResult" />
+    <result column="F_Rank" jdbcType="INTEGER" property="fRank" />
+  </resultMap>
+</mapper>

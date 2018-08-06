@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TsMatchMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TsMatch">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="matchid" jdbcType="INTEGER" property="matchid" />
+    <result column="phaseid" jdbcType="INTEGER" property="phaseid" />
+    <result column="matchcode" jdbcType="NVARCHAR" property="matchcode" />
+    <result column="matchno" jdbcType="INTEGER" property="matchno" />
+    <result column="matchlongname" jdbcType="NVARCHAR" property="matchlongname" />
+    <result column="matchshortname" jdbcType="NVARCHAR" property="matchshortname" />
+    <result column="matchorder" jdbcType="INTEGER" property="matchorder" />
+    <result column="matchstatus" jdbcType="INTEGER" property="matchstatus" />
+  </resultMap>
+</mapper>

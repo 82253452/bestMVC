@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiPraiseMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiPraise">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="resultid" jdbcType="INTEGER" property="resultid" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="praise" jdbcType="INTEGER" property="praise" />
+    <result column="sportid" jdbcType="INTEGER" property="sportid" />
+    <result column="mtine" jdbcType="BIGINT" property="mtine" />
+    <result column="ctime" jdbcType="BIGINT" property="ctime" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="type" jdbcType="CHAR" property="type" />
+  </resultMap>
+</mapper>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.SysCommandMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.SysCommand">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="command_no" jdbcType="NVARCHAR" property="commandNo" />
+    <result column="command_name" jdbcType="NVARCHAR" property="commandName" />
+    <result column="scene_name" jdbcType="NVARCHAR" property="sceneName" />
+    <result column="select_statement" jdbcType="NVARCHAR" property="selectStatement" />
+    <result column="command_index" jdbcType="NVARCHAR" property="commandIndex" />
+    <result column="dynamic" jdbcType="NVARCHAR" property="dynamic" />
+    <result column="cmds_folder_flag" jdbcType="NVARCHAR" property="cmdsFolderFlag" />
+    <result column="cmds_folder_no" jdbcType="NVARCHAR" property="cmdsFolderNo" />
+    <result column="rowlist" jdbcType="NVARCHAR" property="rowlist" />
+    <result column="collist" jdbcType="NVARCHAR" property="collist" />
+    <result column="step" jdbcType="NVARCHAR" property="step" />
+    <result column="control_key" jdbcType="NVARCHAR" property="controlKey" />
+  </resultMap>
+</mapper>

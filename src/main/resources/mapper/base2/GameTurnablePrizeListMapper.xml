@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.GameTurnablePrizeListMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.GameTurnablePrizeList">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="link_url" jdbcType="VARCHAR" property="linkUrl" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="info_id" jdbcType="INTEGER" property="infoId" />
+    <result column="create_time" jdbcType="INTEGER" property="createTime" />
+    <result column="update_time" jdbcType="INTEGER" property="updateTime" />
+    <result column="probability" jdbcType="DOUBLE" property="probability" />
+    <result column="sort" jdbcType="INTEGER" property="sort" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+  </resultMap>
+</mapper>

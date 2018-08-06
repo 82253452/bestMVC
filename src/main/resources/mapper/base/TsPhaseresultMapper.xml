@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TsPhaseresultMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TsPhaseresult">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="phaseid" jdbcType="INTEGER" property="phaseid" />
+    <result column="phaseresultorder" jdbcType="INTEGER" property="phaseresultorder" />
+    <result column="sportid" jdbcType="INTEGER" property="sportid" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="rank" jdbcType="INTEGER" property="rank" />
+    <result column="displayposition" jdbcType="INTEGER" property="displayposition" />
+    <result column="IRM" jdbcType="NVARCHAR" property="irm" />
+    <result column="reaction_time" jdbcType="DECIMAL" property="reactionTime" />
+    <result column="FT60" jdbcType="DECIMAL" property="ft60" />
+    <result column="FT330" jdbcType="DECIMAL" property="ft330" />
+    <result column="FT660" jdbcType="DECIMAL" property="ft660" />
+    <result column="Speed660" jdbcType="DECIMAL" property="speed660" />
+    <result column="vehicle_speed" jdbcType="DECIMAL" property="vehicleSpeed" />
+    <result column="elapsed_time" jdbcType="DECIMAL" property="elapsedTime" />
+  </resultMap>
+</mapper>

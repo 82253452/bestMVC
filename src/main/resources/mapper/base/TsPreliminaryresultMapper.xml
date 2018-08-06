@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TsPreliminaryresultMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TsPreliminaryresult">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="AutoID" jdbcType="INTEGER" property="autoid" />
+    <result column="ResultTime" jdbcType="TIMESTAMP" property="resulttime" />
+    <result column="SportID" jdbcType="INTEGER" property="sportid" />
+    <result column="MatchID" jdbcType="INTEGER" property="matchid" />
+    <result column="UserID" jdbcType="INTEGER" property="userid" />
+    <result column="UserNo" jdbcType="NVARCHAR" property="userno" />
+    <result column="reaction_time" jdbcType="NUMERIC" property="reactionTime" />
+    <result column="FT60" jdbcType="DECIMAL" property="ft60" />
+    <result column="FT330" jdbcType="DECIMAL" property="ft330" />
+    <result column="FT660" jdbcType="DECIMAL" property="ft660" />
+    <result column="Speed660" jdbcType="DECIMAL" property="speed660" />
+    <result column="vehicle_speed" jdbcType="NUMERIC" property="vehicleSpeed" />
+    <result column="elapsed_time" jdbcType="NUMERIC" property="elapsedTime" />
+  </resultMap>
+</mapper>

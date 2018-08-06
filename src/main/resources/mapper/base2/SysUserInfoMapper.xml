@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.SysUserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.SysUserInfo">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="realname" jdbcType="VARCHAR" property="realname" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="gender" jdbcType="VARCHAR" property="gender" />
+    <result column="identity_auth" jdbcType="BIT" property="identityAuth" />
+    <result column="identity_type" jdbcType="VARCHAR" property="identityType" />
+    <result column="identity_no" jdbcType="VARCHAR" property="identityNo" />
+    <result column="identity_img" jdbcType="VARCHAR" property="identityImg" />
+    <result column="driver_auth" jdbcType="TINYINT" property="driverAuth" />
+    <result column="driver_no" jdbcType="VARCHAR" property="driverNo" />
+    <result column="driver_img" jdbcType="VARCHAR" property="driverImg" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="province" jdbcType="VARCHAR" property="province" />
+    <result column="city" jdbcType="VARCHAR" property="city" />
+    <result column="address" jdbcType="VARCHAR" property="address" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="mtime" jdbcType="INTEGER" property="mtime" />
+    <result column="status" jdbcType="BIT" property="status" />
+    <result column="wx_number" jdbcType="VARCHAR" property="wxNumber" />
+    <result column="driver_auth_error" jdbcType="VARCHAR" property="driverAuthError" />
+    <result column="team" jdbcType="VARCHAR" property="team" />
+    <result column="zone" jdbcType="VARCHAR" property="zone" />
+    <result column="bonus_ponits" jdbcType="BIGINT" property="bonusPonits" />
+    <result column="empiric_value" jdbcType="BIGINT" property="empiricValue" />
+    <result column="gold" jdbcType="BIGINT" property="gold" />
+    <result column="contribute" jdbcType="BIGINT" property="contribute" />
+    <result column="popular" jdbcType="BIGINT" property="popular" />
+    <result column="wealth" jdbcType="BIGINT" property="wealth" />
+    <result column="note" jdbcType="LONGVARCHAR" property="note" />
+  </resultMap>
+</mapper>

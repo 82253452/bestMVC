@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiLivePresentMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiLivePresent">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="bonus" jdbcType="INTEGER" property="bonus" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="dtime" jdbcType="INTEGER" property="dtime" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="payment" jdbcType="INTEGER" property="payment" />
+  </resultMap>
+</mapper>

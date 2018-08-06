@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiEnrollUpMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiEnrollUp">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sport_id" jdbcType="INTEGER" property="sportId" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="user_id" jdbcType="INTEGER" property="userId" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="car_id" jdbcType="INTEGER" property="carId" />
+    <result column="car_number" jdbcType="VARCHAR" property="carNumber" />
+    <result column="fleet_id" jdbcType="INTEGER" property="fleetId" />
+    <result column="phone" jdbcType="VARCHAR" property="phone" />
+    <result column="status" jdbcType="CHAR" property="status" />
+    <result column="verify" jdbcType="CHAR" property="verify" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+    <result column="update_date" jdbcType="TIMESTAMP" property="updateDate" />
+    <result column="amount" jdbcType="DECIMAL" property="amount" />
+    <result column="insurance" jdbcType="CHAR" property="insurance" />
+    <result column="insurance_id" jdbcType="INTEGER" property="insuranceId" />
+    <result column="insurance_amount" jdbcType="DECIMAL" property="insuranceAmount" />
+    <result column="fleet_name" jdbcType="VARCHAR" property="fleetName" />
+    <result column="real_name" jdbcType="VARCHAR" property="realName" />
+    <result column="identity_no" jdbcType="VARCHAR" property="identityNo" />
+    <result column="wx_number" jdbcType="VARCHAR" property="wxNumber" />
+    <result column="identity_img" jdbcType="VARCHAR" property="identityImg" />
+    <result column="driver_img" jdbcType="VARCHAR" property="driverImg" />
+    <result column="intake_mode" jdbcType="VARCHAR" property="intakeMode" />
+    <result column="drive_mode" jdbcType="VARCHAR" property="driveMode" />
+    <result column="hp" jdbcType="INTEGER" property="hp" />
+    <result column="modify_info" jdbcType="VARCHAR" property="modifyInfo" />
+    <result column="groups" jdbcType="VARCHAR" property="groups" />
+    <result column="times" jdbcType="VARCHAR" property="times" />
+    <result column="enter_id" jdbcType="INTEGER" property="enterId" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="sport_name" jdbcType="VARCHAR" property="sportName" />
+    <result column="sport_address" jdbcType="VARCHAR" property="sportAddress" />
+    <result column="brand_name" jdbcType="VARCHAR" property="brandName" />
+    <result column="brand_id" jdbcType="INTEGER" property="brandId" />
+    <result column="series_name" jdbcType="VARCHAR" property="seriesName" />
+    <result column="series_id" jdbcType="INTEGER" property="seriesId" />
+    <result column="model_name" jdbcType="VARCHAR" property="modelName" />
+    <result column="model_id" jdbcType="INTEGER" property="modelId" />
+    <result column="sport_start_time" jdbcType="INTEGER" property="sportStartTime" />
+    <result column="sport_end_time" jdbcType="INTEGER" property="sportEndTime" />
+  </resultMap>
+
+  <select id="queryByCarNo" resultType="com.example.entity.BusiEnrollUp">
+        SELECT u.*
+          FROM busi_enroll_up u LEFT JOIN busi_sport t on u.sport_id=t.id
+            WHERE u.type='1' and  u.car_number=#{carNo} and t.third_id=#{sportId};
+    </select>
+</mapper>

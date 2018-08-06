@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TSencondphaseMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TSencondphase">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="组号" jdbcType="DOUBLE" property="组号" />
+    <result column="名次" jdbcType="DOUBLE" property="名次" />
+    <result column="车号/姓名" jdbcType="NVARCHAR" property="车号姓名" />
+    <result column="时间" jdbcType="DOUBLE" property="时间" />
+    <result column="尾速" jdbcType="DOUBLE" property="尾速" />
+    <result column="车号" jdbcType="NVARCHAR" property="车号" />
+    <result column="姓名" jdbcType="NVARCHAR" property="姓名" />
+  </resultMap>
+</mapper>

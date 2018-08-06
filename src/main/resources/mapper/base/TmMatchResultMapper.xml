@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TmMatchResultMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TmMatchResult">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="F_ModelID" jdbcType="INTEGER" property="fModelid" />
+    <id column="matchid" jdbcType="INTEGER" property="matchid" />
+    <id column="startorder" jdbcType="INTEGER" property="startorder" />
+    <result column="F_SourcePhaseID" jdbcType="INTEGER" property="fSourcephaseid" />
+    <result column="F_SourceMatchID" jdbcType="INTEGER" property="fSourcematchid" />
+    <result column="F_SourceMatchRank" jdbcType="INTEGER" property="fSourcematchrank" />
+  </resultMap>
+</mapper>

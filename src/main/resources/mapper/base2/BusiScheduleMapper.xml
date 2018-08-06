@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiScheduleMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiSchedule">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="schedule_item_name" jdbcType="VARCHAR" property="scheduleItemName" />
+    <result column="node_type_des" jdbcType="VARCHAR" property="nodeTypeDes" />
+    <result column="sportid" jdbcType="INTEGER" property="sportid" />
+    <result column="phaseid" jdbcType="INTEGER" property="phaseid" />
+    <result column="phasecode" jdbcType="VARCHAR" property="phasecode" />
+    <result column="fatherphaseid" jdbcType="INTEGER" property="fatherphaseid" />
+    <result column="matchid" jdbcType="INTEGER" property="matchid" />
+    <result column="node_level" jdbcType="TINYINT" property="nodeLevel" />
+    <result column="item_order" jdbcType="TINYINT" property="itemOrder" />
+    <result column="node_key" jdbcType="VARCHAR" property="nodeKey" />
+    <result column="father_node_key" jdbcType="VARCHAR" property="fatherNodeKey" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="mtine" jdbcType="INTEGER" property="mtine" />
+    <result column="status" jdbcType="BIT" property="status" />
+  </resultMap>
+
+  <select id="findByTitleAndSportId" resultType="com.example.entity.BusiSchedule">
+        SELECT *
+        FROM busi_schedule b
+        WHERE b.phaseid=(
+          SELECT phaseid
+          FROM busi_schedule b
+          WHERE b.fatherphaseid=(
+            SELECT phaseid
+            FROM busi_schedule
+            WHERE
+              sportid = #{sportId} AND schedule_item_name LIKE concat('%',#{title},'%')
+          ) and schedule_item_name='四分之一决赛'
+        ) and b.node_type_des='Match';
+	</select>
+
+  <select id="findByTitleAndSportIdByMatch" resultType="com.example.entity.BusiSchedule">
+        SELECT *
+        FROM busi_schedule b
+        WHERE b.phaseid=(
+          SELECT phaseid
+          FROM busi_schedule b
+          WHERE b.fatherphaseid=(
+            SELECT phaseid
+            FROM busi_schedule
+            WHERE
+              sportid = #{sportId} AND schedule_item_name LIKE concat('%',#{title},'%')
+          ) and schedule_item_name='四分之一决赛'
+        ) and b.node_type_des='Phase';
+	</select>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiRacerMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiRacer">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="birthday" jdbcType="INTEGER" property="birthday" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="avatar" jdbcType="VARCHAR" property="avatar" />
+    <result column="cover" jdbcType="VARCHAR" property="cover" />
+    <result column="certtype" jdbcType="VARCHAR" property="certtype" />
+    <result column="certno" jdbcType="VARCHAR" property="certno" />
+    <result column="certification" jdbcType="BIT" property="certification" />
+    <result column="country" jdbcType="VARCHAR" property="country" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="serve" jdbcType="VARCHAR" property="serve" />
+    <result column="served" jdbcType="VARCHAR" property="served" />
+    <result column="cartype" jdbcType="VARCHAR" property="cartype" />
+    <result column="note" jdbcType="VARCHAR" property="note" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="mtine" jdbcType="INTEGER" property="mtine" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+  </resultMap>
+</mapper>

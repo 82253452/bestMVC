@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiNewsMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiNews">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="type" jdbcType="VARCHAR" property="type" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="links" jdbcType="VARCHAR" property="links" />
+    <result column="describe" jdbcType="VARCHAR" property="describe" />
+    <result column="img_url" jdbcType="VARCHAR" property="imgUrl" />
+    <result column="label" jdbcType="VARCHAR" property="label" />
+    <result column="top" jdbcType="TINYINT" property="top" />
+    <result column="app" jdbcType="TINYINT" property="app" />
+    <result column="program" jdbcType="TINYINT" property="program" />
+    <result column="banner" jdbcType="TINYINT" property="banner" />
+    <result column="recommend" jdbcType="TINYINT" property="recommend" />
+    <result column="home" jdbcType="TINYINT" property="home" />
+    <result column="weight_level" jdbcType="TINYINT" property="weightLevel" />
+    <result column="weight_value" jdbcType="INTEGER" property="weightValue" />
+    <result column="create_time" jdbcType="INTEGER" property="createTime" />
+    <result column="update_time" jdbcType="INTEGER" property="updateTime" />
+    <result column="effect_time" jdbcType="INTEGER" property="effectTime" />
+    <result column="author_id" jdbcType="INTEGER" property="authorId" />
+    <result column="author_name" jdbcType="VARCHAR" property="authorName" />
+    <result column="author_url" jdbcType="VARCHAR" property="authorUrl" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="app_name" jdbcType="VARCHAR" property="appName" />
+    <result column="app_url" jdbcType="VARCHAR" property="appUrl" />
+    <result column="views" jdbcType="INTEGER" property="views" />
+    <result column="appid" jdbcType="VARCHAR" property="appid" />
+    <result column="content" jdbcType="LONGVARCHAR" property="content" />
+  </resultMap>
+</mapper>

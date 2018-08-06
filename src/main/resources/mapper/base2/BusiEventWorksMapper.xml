@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiEventWorksMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiEventWorks">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="eid" jdbcType="INTEGER" property="eid" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="url" jdbcType="VARCHAR" property="url" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="page_views" jdbcType="INTEGER" property="pageViews" />
+    <result column="ctime" jdbcType="TIMESTAMP" property="ctime" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="w" jdbcType="INTEGER" property="w" />
+    <result column="h" jdbcType="INTEGER" property="h" />
+  </resultMap>
+</mapper>

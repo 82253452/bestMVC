@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiSuggestionMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiSuggestion">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="type" jdbcType="CHAR" property="type" />
+    <result column="status" jdbcType="CHAR" property="status" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="mtime" jdbcType="INTEGER" property="mtime" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="images" jdbcType="VARCHAR" property="images" />
+    <result column="pid" jdbcType="INTEGER" property="pid" />
+    <result column="icon" jdbcType="VARCHAR" property="icon" />
+    <result column="cstatus" jdbcType="CHAR" property="cstatus" />
+    <result column="suggetion" jdbcType="LONGVARCHAR" property="suggetion" />
+  </resultMap>
+</mapper>

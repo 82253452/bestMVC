@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiBrandModelNewMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiBrandModelNew">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="parentid" jdbcType="INTEGER" property="parentid" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="img" jdbcType="VARCHAR" property="img" />
+    <result column="creater" jdbcType="VARCHAR" property="creater" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="editor" jdbcType="VARCHAR" property="editor" />
+    <result column="mtime" jdbcType="INTEGER" property="mtime" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="short_word" jdbcType="CHAR" property="shortWord" />
+    <result column="car_name" jdbcType="VARCHAR" property="carName" />
+    <result column="model_name" jdbcType="VARCHAR" property="modelName" />
+    <result column="class_name" jdbcType="VARCHAR" property="className" />
+    <result column="hot" jdbcType="LONGVARCHAR" property="hot" />
+  </resultMap>
+</mapper>

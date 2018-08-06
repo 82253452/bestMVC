@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.DataHistory200Mapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.DataHistory200">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="year" jdbcType="INTEGER" property="year" />
+    <result column="month" jdbcType="INTEGER" property="month" />
+    <result column="sport" jdbcType="INTEGER" property="sport" />
+    <result column="phase" jdbcType="VARCHAR" property="phase" />
+    <result column="groups" jdbcType="VARCHAR" property="groups" />
+    <result column="subgroup" jdbcType="VARCHAR" property="subgroup" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="realname" jdbcType="VARCHAR" property="realname" />
+    <result column="nick" jdbcType="VARCHAR" property="nick" />
+    <result column="site" jdbcType="VARCHAR" property="site" />
+    <result column="court" jdbcType="INTEGER" property="court" />
+    <result column="car_id" jdbcType="INTEGER" property="carId" />
+    <result column="car_logo" jdbcType="VARCHAR" property="carLogo" />
+    <result column="car_model" jdbcType="VARCHAR" property="carModel" />
+    <result column="reaction_time" jdbcType="DOUBLE" property="reactionTime" />
+    <result column="reaction_time_1" jdbcType="DOUBLE" property="reactionTime1" />
+    <result column="reaction_time_2" jdbcType="DOUBLE" property="reactionTime2" />
+    <result column="reaction_time_3" jdbcType="DOUBLE" property="reactionTime3" />
+    <result column="elapsed_time" jdbcType="DOUBLE" property="elapsedTime" />
+    <result column="elapsed_time_1" jdbcType="DOUBLE" property="elapsedTime1" />
+    <result column="elapsed_time_2" jdbcType="DOUBLE" property="elapsedTime2" />
+    <result column="elapsed_time_3" jdbcType="DOUBLE" property="elapsedTime3" />
+    <result column="vehicle_speed" jdbcType="DOUBLE" property="vehicleSpeed" />
+    <result column="vehicle_speed_1" jdbcType="DOUBLE" property="vehicleSpeed1" />
+    <result column="vehicle_speed_2" jdbcType="DOUBLE" property="vehicleSpeed2" />
+    <result column="vehicle_speed_3" jdbcType="DOUBLE" property="vehicleSpeed3" />
+    <result column="rank" jdbcType="VARCHAR" property="rank" />
+    <result column="team" jdbcType="VARCHAR" property="team" />
+    <result column="show" jdbcType="BIT" property="show" />
+    <result column="creater" jdbcType="VARCHAR" property="creater" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="editor" jdbcType="VARCHAR" property="editor" />
+    <result column="mtime" jdbcType="INTEGER" property="mtime" />
+    <result column="status" jdbcType="BIT" property="status" />
+  </resultMap>
+</mapper>

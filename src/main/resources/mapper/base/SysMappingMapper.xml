@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.SysMappingMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.SysMapping">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="mapping_no" jdbcType="NVARCHAR" property="mappingNo" />
+    <result column="command_no" jdbcType="NVARCHAR" property="commandNo" />
+    <result column="scene_name" jdbcType="NVARCHAR" property="sceneName" />
+    <result column="itemattr_id" jdbcType="NVARCHAR" property="itemattrId" />
+    <result column="source_flag" jdbcType="NVARCHAR" property="sourceFlag" />
+    <result column="addr_table" jdbcType="NVARCHAR" property="addrTable" />
+    <result column="addr_column" jdbcType="NVARCHAR" property="addrColumn" />
+    <result column="addr_row" jdbcType="NVARCHAR" property="addrRow" />
+    <result column="addr_variable_name" jdbcType="NVARCHAR" property="addrVariableName" />
+    <result column="addr_select_statement" jdbcType="NVARCHAR" property="addrSelectStatement" />
+  </resultMap>
+</mapper>

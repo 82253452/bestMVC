@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TsMatchresultMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TsMatchresult">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="matchid" jdbcType="INTEGER" property="matchid" />
+    <id column="startorder" jdbcType="INTEGER" property="startorder" />
+    <result column="sportid" jdbcType="INTEGER" property="sportid" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="rank" jdbcType="INTEGER" property="rank" />
+    <result column="displayposition" jdbcType="INTEGER" property="displayposition" />
+    <result column="IRM" jdbcType="NVARCHAR" property="irm" />
+    <result column="reaction_time" jdbcType="DECIMAL" property="reactionTime" />
+    <result column="FT60" jdbcType="DECIMAL" property="ft60" />
+    <result column="FT330" jdbcType="DECIMAL" property="ft330" />
+    <result column="FT660" jdbcType="DECIMAL" property="ft660" />
+    <result column="Speed660" jdbcType="DECIMAL" property="speed660" />
+    <result column="vehicle_speed" jdbcType="DECIMAL" property="vehicleSpeed" />
+    <result column="elapsed_time" jdbcType="DECIMAL" property="elapsedTime" />
+    <result column="reaction_time_1" jdbcType="DECIMAL" property="reactionTime1" />
+    <result column="FT60_1" jdbcType="DECIMAL" property="ft601" />
+    <result column="FT330_1" jdbcType="DECIMAL" property="ft3301" />
+    <result column="FT660_1" jdbcType="DECIMAL" property="ft6601" />
+    <result column="Speed660_1" jdbcType="DECIMAL" property="speed6601" />
+    <result column="vehicle_speed_1" jdbcType="DECIMAL" property="vehicleSpeed1" />
+    <result column="elapsed_time_1" jdbcType="DECIMAL" property="elapsedTime1" />
+    <result column="reaction_time_2" jdbcType="DECIMAL" property="reactionTime2" />
+    <result column="FT60_2" jdbcType="DECIMAL" property="ft602" />
+    <result column="FT330_2" jdbcType="DECIMAL" property="ft3302" />
+    <result column="FT660_2" jdbcType="DECIMAL" property="ft6602" />
+    <result column="Speed660_2" jdbcType="DECIMAL" property="speed6602" />
+    <result column="vehicle_speed_2" jdbcType="DECIMAL" property="vehicleSpeed2" />
+    <result column="elapsed_time_2" jdbcType="DECIMAL" property="elapsedTime2" />
+    <result column="reaction_time_3" jdbcType="DECIMAL" property="reactionTime3" />
+    <result column="FT60_3" jdbcType="DECIMAL" property="ft603" />
+    <result column="FT330_3" jdbcType="DECIMAL" property="ft3303" />
+    <result column="FT660_3" jdbcType="DECIMAL" property="ft6603" />
+    <result column="Speed660_3" jdbcType="DECIMAL" property="speed6603" />
+    <result column="vehicle_speed_3" jdbcType="DECIMAL" property="vehicleSpeed3" />
+    <result column="elapsed_time_3" jdbcType="DECIMAL" property="elapsedTime3" />
+    <result column="F_SourcePhaseID" jdbcType="INTEGER" property="fSourcephaseid" />
+    <result column="F_SourceMatchID" jdbcType="INTEGER" property="fSourcematchid" />
+    <result column="F_SourceMatchRank" jdbcType="INTEGER" property="fSourcematchrank" />
+    <result column="timediff" jdbcType="DECIMAL" property="timediff" />
+    <result column="persontimediff" jdbcType="DECIMAL" property="persontimediff" />
+    <result column="RTSign" jdbcType="INTEGER" property="rtsign" />
+  </resultMap>
+  <select id="queryList" resultType="java.util.Map">
+      select r.*,u.true_name,u.nick,u.no
+        from TS_MatchResult r left join TR_User u on r.userid=u.userid and r.sportid=u.sportid
+        where r.matchid=#{matchId}
+  </select>
+  <select id="getBestMatchResult" resultType="java.lang.String">
+      select top 1 m.elapsed_time
+      from TS_MatchResult m
+      where m.userid in (
+        select m.userid
+        from TS_MatchResult m
+        where m.matchid in (select t.matchid
+                            from TS_Match t
+                            where t.phaseid in (select phaseid
+                                                from TS_Phase p
+                                                where p.fatherphaseid = (select p.fatherphaseid
+                                                                         from TS_Match m left join TS_Phase p
+                                                                             on m.phaseid = p.phaseid
+                                                                         where m.matchid = #{matchid}))) and m.userid is not null
+              and m.userid != ''
+      ) and m.matchid = #{matchid2}
+      order by elapsed_time
+  </select>
+</mapper>

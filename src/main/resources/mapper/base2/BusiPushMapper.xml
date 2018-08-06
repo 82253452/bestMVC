@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiPushMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiPush">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="logo" jdbcType="VARCHAR" property="logo" />
+    <result column="transmission_type" jdbcType="INTEGER" property="transmissionType" />
+    <result column="transmission_content" jdbcType="VARCHAR" property="transmissionContent" />
+    <result column="alias" jdbcType="VARCHAR" property="alias" />
+    <result column="state" jdbcType="TINYINT" property="state" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+  </resultMap>
+</mapper>

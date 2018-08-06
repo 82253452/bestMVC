@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiTicketMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiTicket">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="title" jdbcType="VARCHAR" property="title" />
+    <result column="serial_number" jdbcType="VARCHAR" property="serialNumber" />
+    <result column="uid" jdbcType="INTEGER" property="uid" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+  </resultMap>
+</mapper>

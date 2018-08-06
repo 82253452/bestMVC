@@ -1,0 +1,80 @@
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="Mysql" targetRuntime="MyBatis3Simple" defaultModelType="flat">
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
+            <property name="mappers" value="tk.mybatis.mapper.common.Mapper"/>
+            <property name="caseSensitive" value="true"/>
+        </plugin>
+
+        <!--service-->
+        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
+            <property name="targetProject" value="src/main/java"/>
+            <property name="targetPackage" value="com.example.service.base2.impl"/>
+            <property name="templatePath" value="file:///D:\work\demo\src\main\resources\generator\serviceImpl.ftl"/>
+            <property name="mapperSuffix" value="Service"/>
+            <property name="fileName" value="${tableClass.shortClassName}${mapperSuffix}Impl.java"/>
+        </plugin>
+        <!--serviceImpl-->
+        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
+            <property name="targetProject" value="src/main/java"/>
+            <property name="targetPackage" value="com.example.service.base2"/>
+            <property name="templatePath" value="file:///D:\work\demo\src\main\resources\generator\service.ftl"/>
+            <property name="mapperSuffix" value="Service"/>
+            <property name="fileName" value="${tableClass.shortClassName}${mapperSuffix}.java"/>
+        </plugin>
+        <!--controller-->
+        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
+            <property name="targetProject" value="src/main/java"/>
+            <property name="targetPackage" value="com.example.controller2"/>
+            <property name="templatePath" value="file:///D:\work\demo\src\main\resources\generator\controller.ftl"/>
+            <property name="mapperSuffix" value="Controller"/>
+            <property name="fileName" value="${tableClass.shortClassName}${mapperSuffix}.java"/>
+        </plugin>
+        <!--api-->
+        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
+        <property name="targetProject" value="src/main/resources"/>
+        <property name="targetPackage" value="vue-element-admin.src.api.base"/>
+        <property name="templatePath" value="file:///D:\work\demo\src\main\resources\generator\api.ftl"/>
+        <property name="fileName" value="${tableClass.variableName}.js"/>
+        </plugin>
+        <!--view-->
+        <plugin type="tk.mybatis.mapper.generator.TemplateFilePlugin">
+            <property name="targetProject" value="src/main/resources"/>
+            <property name="targetPackage" value="vue-element-admin.src.views.base"/>
+            <property name="templatePath" value="file:///D:\work\demo\src\main\resources\generator\vue.ftl"/>
+            <property name="fileName" value="${tableClass.variableName}.vue"/>
+        </plugin>
+
+
+        <!--<jdbcConnection driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver"-->
+                        <!--connectionURL="jdbc:sqlserver://127.0.0.1:1433;database=N_Racing"-->
+                        <!--userId="sa"-->
+                        <!--password="sa">-->
+        <!--</jdbcConnection>-->
+
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://47.92.100.148:3306/fast4ward_dev"
+                        userId="root"
+                        password="Fblife@20171019">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.example.entity"
+                            targetProject="src/main/java"/>
+
+        <sqlMapGenerator targetPackage="mapper.base2"
+                         targetProject="src/main/resources"/>
+
+        <javaClientGenerator targetPackage="com.example.mapper.base2"
+                             targetProject="src/main/java"
+                             type="XMLMAPPER"/>
+
+        <table tableName="%" schema="fast4ward_dev"/>
+    </context>
+</generatorConfiguration>

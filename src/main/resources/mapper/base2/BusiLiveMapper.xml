@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.BusiLiveMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.BusiLive">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="live_name" jdbcType="VARCHAR" property="liveName" />
+    <result column="live_url" jdbcType="VARCHAR" property="liveUrl" />
+    <result column="ctime" jdbcType="INTEGER" property="ctime" />
+    <result column="dtime" jdbcType="INTEGER" property="dtime" />
+    <result column="status" jdbcType="TINYINT" property="status" />
+    <result column="live_image" jdbcType="VARCHAR" property="liveImage" />
+    <result column="mid" jdbcType="INTEGER" property="mid" />
+  </resultMap>
+</mapper>

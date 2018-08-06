@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base.TsSportMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.TsSport">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <result column="id" jdbcType="INTEGER" property="id" />
+    <result column="active" jdbcType="INTEGER" property="active" />
+    <result column="name" jdbcType="NVARCHAR" property="name" />
+    <result column="typeid" jdbcType="INTEGER" property="typeid" />
+    <result column="memo" jdbcType="NVARCHAR" property="memo" />
+    <result column="area" jdbcType="NVARCHAR" property="area" />
+    <result column="race_begin" jdbcType="TIMESTAMP" property="raceBegin" />
+    <result column="race_end" jdbcType="TIMESTAMP" property="raceEnd" />
+    <result column="sign_begin" jdbcType="TIMESTAMP" property="signBegin" />
+    <result column="sign_end" jdbcType="TIMESTAMP" property="signEnd" />
+    <result column="watchers" jdbcType="INTEGER" property="watchers" />
+    <result column="drivers" jdbcType="INTEGER" property="drivers" />
+    <result column="ticker" jdbcType="INTEGER" property="ticker" />
+    <result column="fee" jdbcType="INTEGER" property="fee" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="contacts" jdbcType="NVARCHAR" property="contacts" />
+    <result column="address" jdbcType="NVARCHAR" property="address" />
+  </resultMap>
+</mapper>

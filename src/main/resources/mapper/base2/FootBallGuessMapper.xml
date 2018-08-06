@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.mapper.base2.FootBallGuessMapper">
+  <resultMap id="BaseResultMap" type="com.example.entity.FootBallGuess">
+    <!--
+      WARNING - @mbg.generated
+    -->
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="sport_id" jdbcType="INTEGER" property="sportId" />
+    <result column="integral" jdbcType="INTEGER" property="integral" />
+    <result column="person_num" jdbcType="INTEGER" property="personNum" />
+    <result column="strat_time" jdbcType="TIMESTAMP" property="stratTime" />
+    <result column="end_time" jdbcType="TIMESTAMP" property="endTime" />
+    <result column="sport_status" jdbcType="INTEGER" property="sportStatus" />
+    <result column="ctime" jdbcType="TIMESTAMP" property="ctime" />
+    <result column="flat_person_num" jdbcType="INTEGER" property="flatPersonNum" />
+    <result column="guest_person_num" jdbcType="INTEGER" property="guestPersonNum" />
+    <result column="home_person_num" jdbcType="INTEGER" property="homePersonNum" />
+    <result column="utime" jdbcType="TIMESTAMP" property="utime" />
+    <result column="average_integral" jdbcType="INTEGER" property="averageIntegral" />
+    <result column="multiple" jdbcType="REAL" property="multiple" />
+  </resultMap>
+</mapper>
