@@ -222,6 +222,7 @@ public class OvrmService {
         busiResultMapper.insert(busiResultEntity);
     }
 
+    @Transactional
     public R insertSportPhase(TsSport tsSport, BusiSport busiSport, ArrayList<Map<String, String>> pdfList) {
         TsPhase tsPhase = new TsPhase();
         tsPhase.setSportid(tsSport.getId());

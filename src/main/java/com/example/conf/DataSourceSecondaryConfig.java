@@ -1,5 +1,6 @@
 package com.example.conf;
 
+import bitronix.tm.resource.jdbc.PoolingDataSource;
 import com.atomikos.jdbc.AtomikosDataSourceBean;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
@@ -52,7 +53,16 @@ public class DataSourceSecondaryConfig {
         xaDataSource.setMaxIdleTime(env.getProperty("spring.datasource.pool.maxIdleTime", Integer.class));
         xaDataSource.setMaxLifetime(env.getProperty("spring.datasource.pool.maxLifetime", Integer.class));
         xaDataSource.setTestQuery(env.getProperty("spring.datasource.pool.testQuery"));
-        return xaDataSource;
+
+        PoolingDataSource poolingDataSource  = new PoolingDataSource();
+        poolingDataSource.setClassName("com.mysql.jdbc.jdbc2.optional.MysqlXADataSource");
+        poolingDataSource.setUniqueName("tttttttttt");
+        poolingDataSource.setDriverProperties(properties);
+        poolingDataSource.setMinPoolSize(10);
+        poolingDataSource.setMaxPoolSize(100);
+        poolingDataSource.setAllowLocalTransactions(true);
+
+        return poolingDataSource;
     }
 
     @Bean(name = "secondarySqlSessionFactory")

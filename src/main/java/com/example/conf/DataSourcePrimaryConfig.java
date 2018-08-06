@@ -1,6 +1,9 @@
 package com.example.conf;
 
+import bitronix.tm.jndi.BitronixInitialContextFactory;
+import bitronix.tm.resource.jdbc.PoolingDataSource;
 import com.atomikos.jdbc.AtomikosDataSourceBean;
+import com.microsoft.sqlserver.jdbc.SQLServerXADataSource;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.SqlSessionTemplate;
@@ -17,6 +20,7 @@ import tk.mybatis.mapper.mapperhelper.MapperHelper;
 import tk.mybatis.spring.annotation.MapperScan;
 
 import javax.sql.DataSource;
+import java.sql.SQLException;
 import java.util.Properties;
 
 @Configuration
@@ -34,8 +38,9 @@ public class DataSourcePrimaryConfig {
         properties.put("databaseName", env.getProperty("spring.datasource.primary.databaseName"));
         properties.put("user", env.getProperty("spring.datasource.primary.username"));
         properties.put("password", env.getProperty("spring.datasource.primary.password"));
+        properties.put("loginTimeout", "60");
+        properties.put("lockTimeout", "-1");
         xaDataSource.setXaProperties(properties);
-
         xaDataSource.setXaDataSourceClassName("com.microsoft.sqlserver.jdbc.SQLServerXADataSource");
         xaDataSource.setUniqueResourceName("primarySourceName");
         xaDataSource.setMaxPoolSize(env.getProperty("spring.datasource.pool.maxPoolSize",Integer.class));
@@ -43,7 +48,21 @@ public class DataSourcePrimaryConfig {
         xaDataSource.setBorrowConnectionTimeout(env.getProperty("spring.datasource.pool.borrowConnectionTimeout",Integer.class));
         xaDataSource.setMaintenanceInterval(env.getProperty("spring.datasource.pool.maintenanceInterval",Integer.class));
         xaDataSource.setMaxIdleTime(env.getProperty("spring.datasource.pool.maxIdleTime",Integer.class));
-        return xaDataSource;
+
+
+        PoolingDataSource poolingDataSource  = new PoolingDataSource();
+        poolingDataSource.setClassName("com.microsoft.sqlserver.jdbc.SQLServerXADataSource");
+        poolingDataSource.setDriverProperties(properties);
+        poolingDataSource.setUniqueName("rrrrrrrr");
+        poolingDataSource.setMinPoolSize(10);
+        poolingDataSource.setMaxPoolSize(100);
+        poolingDataSource.setMaxIdleTime(60);
+        poolingDataSource.setAcquisitionTimeout(60);
+        poolingDataSource.setApplyTransactionTimeout(true);
+        poolingDataSource.setAllowLocalTransactions(true);
+
+
+        return poolingDataSource;
     }
 
     @Bean(name = "primarySqlSessionFactory")

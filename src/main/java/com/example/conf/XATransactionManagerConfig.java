@@ -1,16 +1,15 @@
 package com.example.conf;
 
+import bitronix.tm.BitronixTransactionManager;
+import bitronix.tm.BitronixUserTransactionObjectFactory;
+import bitronix.tm.TransactionManagerServices;
 import com.atomikos.icatch.jta.UserTransactionImp;
 import com.atomikos.icatch.jta.UserTransactionManager;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.DependsOn;
 import org.springframework.context.annotation.Primary;
-import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.jta.JtaTransactionManager;
-
-import javax.transaction.TransactionManager;
-import javax.transaction.UserTransaction;
 
 @Configuration
 public class XATransactionManagerConfig {
@@ -29,11 +28,24 @@ public class XATransactionManagerConfig {
         return userTransactionManager;
     }
 
+    @Bean(name = "btmConfig")
+    bitronix.tm.Configuration transactionManagerServices() {
+        return TransactionManagerServices.getConfiguration().setServerId("spring-btm");
+    }
+
+
+    @Bean(name = "bitronixTransactionManager")
+    @DependsOn("btmConfig")
+    BitronixTransactionManager bitronixTransactionManager() {
+        return TransactionManagerServices.getTransactionManager();
+    }
+
+
     @Bean(name = "transactionManager")
     @Primary
-    @DependsOn({"userTransaction", "atomikosTransactionManager"})
-    public JtaTransactionManager transactionManager() throws Throwable {
-        JtaTransactionManager transactionManager = new JtaTransactionManager(userTransaction(), atomikosTransactionManager());
+//    @DependsOn({"userTransaction", "atomikosTransactionManager"})
+    public JtaTransactionManager transactionManager(BitronixTransactionManager bitronixTransactionManager) throws Throwable {
+        JtaTransactionManager transactionManager = new JtaTransactionManager(bitronixTransactionManager, bitronixTransactionManager);
         transactionManager.setAllowCustomIsolationLevels(true);
         return transactionManager;
     }
