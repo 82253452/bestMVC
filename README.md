@@ -12,5 +12,7 @@
     pageHanndler 最好用的分页插件
     
     xa-atomikos 多数据源 分布式事物
+    
+    xa-Bitronix 之前项目报错新添加了一个分布式事物管理
    
     前端采用vue2的 element-ui
